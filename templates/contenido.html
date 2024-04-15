@@ -1,6 +1,5 @@
-{%extends "base.html" %}
+{%include "base.html" %}
 
-{%block title%} Proyect One {% endblock %}
 
 {% block body %}
 <div class="container">
@@ -18,9 +17,6 @@
             <div class="mb-3">
                 <label for="kgeneracion" class="form-label">Generación</label>
                 <input type="text" id="kgeneracion" name="kgeneracion" class="form-control" placeholder="Generación" required>
-                {% if error_message %}
-                <p style="color: red;">{{ error_message }}</p>
-                {% endif %}
             </div>
             <div class="mb-3">
                 <label for="ksistema" class="form-label">Sistema</label>

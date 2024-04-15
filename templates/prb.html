@@ -1,11 +1,12 @@
-{%extends "base.html" %}
+{%include "base.html" %}
 
-{%block title%} Proyect One {% endblock %}
 
 {% block body %}
-<form method="post">
+<div class="mx-auto" style="max-width: 400px;">
+<form method="post" class="mb-4 border p-4 rounded">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Agregar Laptopp</button>
+    <button type="submit" class="btn btn-primary">Agregar Laptopp</button>
 </form>
+</div>
 {% endblock %}
