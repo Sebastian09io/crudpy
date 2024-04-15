@@ -61,7 +61,7 @@ def funcioneditar(request, id):
         laptop.rom=rom
         laptop.save()
         return redirect('/')
-    
+
 def vistaprb(request):
     """
     Función que manda a la vista prb .
